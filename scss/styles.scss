@@ -9,10 +9,19 @@
 .navbar.btn-outline-light:hover{
     color:#333; //var(--bs-dark)
 }
+.navbar{
+  transition: all .5s ease-in-out;
+}
+.navbar-sticky{
+  opacity: .9;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
 .header{
   background: url(../images/header-background.jpg) center center no-repeat;
   background-size: cover;
 }
+
 
 @media (max-width:1000px){
   .hero.image-container{
