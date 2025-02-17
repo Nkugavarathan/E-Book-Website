@@ -26,6 +26,15 @@
   max-width: 1000px;
 }
 
+.details,.statement{
+  background: linear-gradient(to right, #101c81, #2a6ba3);
+}
+ 
+
+.download{
+  background: url(../images/download-background.jpg);
+}
+
 // /* Ensure the modal has a fixed height and fits within the viewport */
 // .modal-content {
 //   height: 70vh; /* 70% of the viewport height */
