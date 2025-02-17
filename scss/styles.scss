@@ -35,6 +35,14 @@
   background: url(../images/download-background.jpg);
 }
 
+.map iframe{
+  left:0;
+  top:0;
+  height:400px;
+  width:100%;
+border:none;
+
+}
 // /* Ensure the modal has a fixed height and fits within the viewport */
 // .modal-content {
 //   height: 70vh; /* 70% of the viewport height */
