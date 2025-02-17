@@ -9,15 +9,12 @@
       rel="stylesheet"
     />
 
-    <!-- Testimonials  -->
+    <!-- testimonial -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
+
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -180,8 +177,10 @@
             <div
               class="text-container d-flex flex-column justify-content-center h-100"
             >
-              <h2 class="display-6">Unlock Your Blogging potential</h2>
-              <p>
+              <h2 class="display-6 text-warning">
+                Unlock Your Blogging potential
+              </h2>
+              <p class="text-light">
                 Lorem ipsum dolo deleniti distinctio asperiores facilis
                 aspernatutae excepturi quaerat laborum aspernatur.
               </p>
@@ -309,8 +308,10 @@
             <div
               class="text-container d-flex flex-column justify-content-center h-100"
             >
-              <h2 class="display-6">Transform Your Blogging Experience</h2>
-              <p>
+              <h2 class="display-6 text-warning">
+                Transform Your Blogging Experience
+              </h2>
+              <p class="text-light">
                 Blogging offers a dynamic way to express yourself, share your
                 knowledge, and connect with a global audience. Let's explore the
                 possibilities and make the most of your blogging journey.
@@ -404,106 +405,136 @@
 
     <!-- Testimonials  -->
 
-    <div class="owl-carousel owl-theme mt-5">
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
+    <div class="bg-light">
+      <div class="container py-5">
+        <h2 class="text-center mb-5 text-info">What Our Readers Say</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-card p-4 p-md-5">
+                    <i
+                      class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                    ></i>
+                    <div class="text-center mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/45.jpg"
+                        alt="Avatar"
+                        class="avatar mb-3"
+                      />
+                      <h5 class="mb-1">Jessica Carter</h5>
+                      <p class="text-muted mb-0">Book Blogger & Avid Reader</p>
+                    </div>
+                    <p class="lead text-center mb-0">
+                      "This blog is a paradise for book lovers! The in-depth
+                      reviews and recommendations have helped me discover some
+                      of my all-time favorite reads. A must-visit for anyone who
+                      loves eBooks!"
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-card p-4 p-md-5">
+                    <i
+                      class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                    ></i>
+                    <div class="text-center mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/50.jpg"
+                        alt="Avatar"
+                        class="avatar mb-3"
+                      />
+                      <h5 class="mb-1">David Mitchell</h5>
+                      <p class="text-muted mb-0">Self-Published Author</p>
+                    </div>
+                    <p class="lead text-center mb-0">
+                      "As an indie author, I truly appreciate how this platform
+                      showcases upcoming writers. The exposure from this blog
+                      has helped me reach new readers and connect with an
+                      amazing community."
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-card p-4 p-md-5">
+                    <i
+                      class="bi bi-quote quote-icon position-absolute top-0 start-0 mt-3 ms-3"
+                    ></i>
+                    <div class="text-center mb-4">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/62.jpg"
+                        alt="Avatar"
+                        class="avatar mb-3"
+                      />
+                      <h5 class="mb-1">Sophia Reynolds</h5>
+                      <p class="text-muted mb-0">Digital Librarian</p>
+                    </div>
+                    <p class="lead text-center mb-0">
+                      "The articles on this site are insightful and
+                      well-researched. From book recommendations to writing
+                      tips, it's a goldmine of knowledge for readers and writers
+                      alike. I highly recommend it to all book enthusiasts!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+            </div>
           </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Denis Richie</div>
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-              alt=""
-            />
-          </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Lisa Sthalekar</div>
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
-          </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Elizabith Richie</div>
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
-          </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Daniel Xavier</div>
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            />
-          </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Emma Watson</div>
-        </div>
-      </div>
-      <div class="owl-item">
-        <div class="card">
-          <div class="img-card">
-            <img
-              src="https://images.pexels.com/photos/718261/pexels-photo-718261.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
-          </div>
-          <div class="testimonial mt-4 mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            expedita dicta doloremque odit saepe quo natus aut accusantium alias
-            blanditiis.
-          </div>
-          <div class="name">Mohammad Imran</div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
