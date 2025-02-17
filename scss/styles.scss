@@ -22,7 +22,27 @@
   background-size: cover;
 }
 
+.modal-dialog{
+  max-width: 1000px;
+}
 
+// /* Ensure the modal has a fixed height and fits within the viewport */
+// .modal-content {
+//   height: 70vh; /* 70% of the viewport height */
+//   display: flex;
+//   flex-direction: column;
+// }
+
+
+
+// .modal-body {
+//   flex: 1; /* Take up the remaining space */
+//   overflow-y: auto; /* Optional: Add vertical scroll if content exceeds the height */
+// }
+
+// .modal-header, .modal-footer {
+//   flex-shrink: 0; /* Ensure header and footer maintain their size */
+// }
 @media (max-width:1000px){
   .hero.image-container{
     display: flex;
